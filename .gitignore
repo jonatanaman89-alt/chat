@@ -1,0 +1,34 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next
+/out
+
+# production
+/build
+
+# env / secrets — NEVER commit these
+.env
+.env.local
+.env*.local
+
+# vercel
+.vercel
+
+# misc
+*.log
+npm-debug.log*
+.DS_Store
+sabba.txt
+sabba.db
+sessions/
+vardagsschema/
+plat_mm.py
+plat_1500x1300_mm.png
+src/lib/help.txt
+*.session
+.claude/settings.local.json
+
+# local browser-automation output
+.playwright-mcp/

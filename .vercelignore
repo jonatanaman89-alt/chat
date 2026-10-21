@@ -1,0 +1,33 @@
+# Files that must never be uploaded when deploying with the Vercel CLI (`vercel --prod`).
+# The CLI uploads the working directory, not a git commit — so secrets and personal
+# files that git ignores have to be listed here as well.
+
+# env / secrets — values live in Vercel → Settings → Environment Variables
+.env
+.env.local
+.env*.local
+
+# build output and dependencies (Vercel installs and builds itself)
+node_modules
+.next
+out
+build
+
+# local tooling
+.claude
+.vercel
+*.log
+
+# personal / unrelated files in this folder
+sabba.txt
+sabba.db
+sessions/
+vardagsschema/
+plat_mm.py
+plat_1500x1300_mm.png
+*.session
+src/lib/help.txt
+widget-test.html
+
+# local browser-automation output (screenshots, scripts)
+.playwright-mcp
